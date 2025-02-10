@@ -3,6 +3,9 @@
 Welcome to the official Repository of the Website **nostalgia.mc.de**!
 Here you'll be able to find the Source Code used to create this Website.
 
+Check out the latest Updates! [UPDATES.md](UPDATES.md)
+
+
 ## Features
 
 - **Basic Design**
