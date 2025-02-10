@@ -3,24 +3,24 @@
 Please read this File carefully!
 
 Copyright © 2025 Nostalgia-MC
-(www.nostalgia-mc.de) Alle Rechte Vorbehalten
+([www.nostalgia-mc.de](https://www.nostalgia-mc.de)) - All Rights Reserved
 
-Diese Software (einschließlich aller HTML-; CSS-; JavaScript & Bild sowie sonstiger Dateien) ist urheberrechtlich geschützt!
+This Software (including all HTML-; CSS-; JavaScript & Images aswell as other files), is protected by copyright!
 
 ### Allowed Usage
 
 
-- Viewing and using of the Website www.nostalgia-mc.de is allowed
-- Creating your own Copy of the Repository is allowed but changes must be requested & discussed beforehand
+- Viewing and using of the Website ([www.nostalgia-mc.de](https://www.nostalgia-mc.de)) is allowed
+- Creating your own Copy of the Repository is **only allowed with prior approval and discussion**!
 
 ### Prohibited
 
-- Copying, duplicating or giving / making this code public without consent of the owner
+- Copying, duplicating, distributing, or making this code public without **explicit consent** from the Owner
 - Commercial Usage of the Website or selling the uploaded Code
-- Removing Impressum Data or Personal Data is prohibited
+- Removing or modifying the **Impressum Data & HTML Data aswell as Personal Data**
 
 ### Exceptions
 
-If you wish to use parts of my code or wish to use parts of my code for your own personal usage, please contact me on Discord (#Discord-Link) and we will discuss any further actions required.
+If you wish to use or modify parts of my Code for **personal** purposes, please contact me via Discord (#Discord-Link) to discuss permissions!
 
-**Violating this Licence File will have law consequences if necessary**
+**Violating this Licence File may have legal consequences**
