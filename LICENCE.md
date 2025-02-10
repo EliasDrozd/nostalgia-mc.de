@@ -21,6 +21,6 @@ This Software (including all HTML-; CSS-; JavaScript & Images aswell as other fi
 
 ### Exceptions
 
-If you wish to use or modify parts of my Code for **personal** purposes, please contact me via Discord (#Discord-Link) to discuss permissions!
+If you wish to use or modify parts of my Code for **personal** purposes, please contact me via [Discord](https://discord.gg/vsyfRPMWNj) to discuss permissions!
 
 **Violating this Licence File may have legal consequences**
