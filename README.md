@@ -1,5 +1,9 @@
 ### nostalgia-mc.de
 
+
+![Nostalgia_Server_Icon](https://github.com/user-attachments/assets/7ed7ba55-1378-4f9c-9ea0-833e0b59974e)
+
+
 Welcome to the official Repository of the Website **nostalgia.mc.de**!
 Here you'll be able to find the Source Code used to create this Website.
 
