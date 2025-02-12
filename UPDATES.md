@@ -19,6 +19,7 @@
 - **Reworked Container to prevent doubeling any CSS-Flags**
 - **Added new GitHub Branch for v2.0**
 - **Renamed the "main" Branch into "main (v1.0)"**
+- **Updated bewerbungen.css & Bewerbungen.html**
 
 **10.02.2025**
 
