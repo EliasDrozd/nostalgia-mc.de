@@ -128,6 +128,14 @@ h1 {
     color: #fff;
 }
 
+.bewerbungen-content .bewerbung-info{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #fff;
+    text-align: center;
+    margin-top: 6vh;
+}
+
 .bewerbungen-content li {
     font-size: 1.5rem;
 }
@@ -140,6 +148,21 @@ h1 {
     color: orange;
 }
 
+.bewerbungs-button {
+    display: inline-block;
+    background: #217d30;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out; 
+}
+
+.bewerbungs-button:hover {
+    background: #23c12d;
+}
+
 /* Footer Design  */
 /* ============= */
 .footer-container { 
@@ -149,7 +172,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 40vh;
+    margin-top: 30vh;
     background-color: #222;
     border-radius: 12px;
 }
