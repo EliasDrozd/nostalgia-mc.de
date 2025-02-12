@@ -1,4 +1,4 @@
-### UPDATES
+### 📣 UPDATES
 
 **This is the active Web-Changelog**
 
