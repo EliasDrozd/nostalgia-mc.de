@@ -1,0 +1,280 @@
+/* Blog CSS Style Sheet  */
+/* ==================== */
+
+/* Imports  */
+/* ======= */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+/* Gobal Styles  */
+/* ============ */
+body {
+    font-size: 10px;
+    font-family: "Titillium Web", serif;
+    color: #fff;
+    background-color: #131c24;
+    border-radius: 8px;
+}
+
+html:root {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Navigationbar Design  */
+/* ==================== */
+.navbar-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #222;
+    border-radius: 12px;
+    transition: margin-top 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.navbar-content ul {
+    list-style-type: none;
+    display: flex;
+    gap: 4rem;
+}
+
+.navbar-content li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar-content a {
+    color: #958989b0;
+    font-size: 26px;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 0.25rem;
+}
+
+/* Navigationbar Link Hover Design  */
+/* =============================== */
+.navbar-content a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.25rem;
+    transition: width 0.4s ease-in-out;
+    background-color: #1d4ed8;
+    border-radius: 8px;
+}
+
+.navbar-content a:hover:after {
+    width: 100%;
+}
+
+.navbar-content a:hover {
+    transition: color 0.4s ease-in-out;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Blog Container Design  */
+/* ===================== */
+.blog-container {
+    display: flex;
+    flex-wrap: nowrap; /* Kein Zeilenumbruch innerhalb des Containers */
+    background-color: #222;
+    margin: 4vh 1vw 1vw;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.88);
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+
+h1 { 
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.author-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 10%;
+}
+
+.author-profile img {
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.role {
+    position: relative;
+    color: red;
+    font-size: 1rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.post-meta {
+    font-size: 1rem;
+    font-style: italic;
+    color: #aaa;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.blog-content {
+    width: 100%; 
+    padding-left: 4rem;
+}
+
+.blog-post {
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    background-color: #2f2d2d;
+}
+
+.blog-post p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #fff;
+}
+
+/* Warp Plugin Content Design  */
+/* ========================== */
+.warp-plugin-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.warp-plugin-container img {
+      max-width: 25%;
+      height: auto;
+      border-radius: 12px;
+}
+
+/* Skywars-Kits Design  */
+/* =================== */
+.SkywarsHeader {
+    height: 4rem;
+    width: auto;
+}
+
+.SkywarsKits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+.kit-card {
+    display: flex;
+    align-items: center;
+    background: #222;
+    color: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: calc(30% - 2rem);
+    transition: transform 0.2s ease-in-out;
+}
+
+.kit-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.kit-icon {
+    width: 64px;
+    height: 64px;
+    margin-right: 2rem;
+}
+
+.kit-info h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.kit-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.kit-info li {
+    font-size: 1.1rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* Footer Design  */
+/* ============= */
+.footer-container { 
+    position: relative;
+    bottom: 0;
+    width: 99.8%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40vh;
+    background-color: #222;
+    border-radius: 12px;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    gap:20rem;
+}
+
+footer li {
+    list-style: none;
+    text-decoration: none;
+}
+
+footer a {
+    color: #958989b0;
+    font-size: 26px;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 0.25rem;
+}
+
+/* Footer Link Hover Design  */
+/* =============================== */
+footer a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.25rem;
+    transition: width 0.4s ease-in-out;
+    background-color: #1d4ed8;
+    border-radius: 8px;
+}
+
+footer a:hover:after {
+    width: 100%;
+}
+
+footer a:hover {
+    transition: color 0.4s ease-in-out;
+    color: #fff;
+    cursor: pointer;
+}

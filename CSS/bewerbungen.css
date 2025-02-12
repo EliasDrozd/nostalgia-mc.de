@@ -1,5 +1,5 @@
-/* Index CSS Style Sheet  */
-/* ===================== */
+/* Bewerbungen CSS Style Sheet  */
+/* =========================== */
 
 /* Imports  */
 /* ======= */
@@ -7,7 +7,7 @@
 
 /* Gobal Styles  */
 /* ============ */
-body{
+body {
     font-size: 10px;
     font-family: "Titillium Web", serif;
     color: #fff;
@@ -15,7 +15,7 @@ body{
     border-radius: 8px;
 }
 
-html:root{
+html:root {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
@@ -25,7 +25,7 @@ html:root{
 
 /* Navigationbar Design  */
 /* ==================== */
-.navbar-container{
+.navbar-container {
     display: flex;
     justify-content: right;
     align-items: center;
@@ -35,18 +35,18 @@ html:root{
     transition: margin-top 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 
-.navbar-content ul{
+.navbar-content ul {
     list-style-type: none;
     display: flex;
     gap: 4rem;
 }
 
-.navbar-content li{
+.navbar-content li { 
     list-style: none;
     text-decoration: none;
 }
 
-.navbar-content a{
+.navbar-content a {
     color: #958989b0;
     font-size: 26px;
     text-decoration: none;
@@ -56,7 +56,7 @@ html:root{
 
 /* Navigationbar Link Hover Design  */
 /* =============================== */
-.navbar-content a::after{
+.navbar-content a::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -68,113 +68,76 @@ html:root{
     border-radius: 8px;
 }
 
-.navbar-content a:hover:after{
+.navbar-content a:hover:after { 
     width: 100%;
 }
 
-.navbar-content a:hover{
+.navbar-content a:hover {
     transition: color 0.4s ease-in-out;
     color: #fff;
     cursor: pointer;
 }
 
-/* Server Image Container Design  */
-/* ============================= */
-.server-img-container{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: auto;
-    height: 280px;
-    margin: 6rem;
-    gap: 4rem;
-}
-
-/* Server Image Design  */
-/* =================== */
-.server-img-container img{
-    border-radius: 8px;
-    box-shadow: 0 4px 8px 4px #222;
-    position: relative;
-    z-index: 2;
-}
-
-.server-img-container::before{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-125%, -50%);
-    width: 380px;
-    height: 380px;
-    background: radial-gradient(circle, rgba(29, 78, 216, 0.5) 10%, rgba(29, 78, 216, 0) 70%);
-    filter: blur(20px);
+/* Background Image & Overlay Design  */
+/* ================================= */
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     z-index: -1;
-    pointer-events: none;
+    filter: blur(1px);
 }
 
-/* Header Text Design  */
-/* ================== */
-.server-img-container .header-text h1, h2{
-    margin-top: 2rem;
-    font-weight: 700;
-    opacity: 0;
-    transform: translateX(50px);
-}
-
-.header-text h1{
-    font-size: 3.5rem;
-    color: #fff;
-    animation: fadeInSlide 1s ease-in forwards;
-}
-
-.header-text h2{
-    font-size: 2.5rem;
-    color: #FFD700;
-    animation: fadeInSlide 1s ease-in forwards;
-    animation-delay: 1s;
-}
-
-/* Header Fade-In Animation Keyframes  */
-/* ================================== */
-@keyframes fadeInSlide{
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-/* Important Updates Container Design  */
-/* ================================== */
-.imp-update-container{
-    background-color: #222;
-    width: 60%;
-    height: auto;
-    margin-top: 20vh;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.88);
-}
-
-.imp-update-content{
-    background-color: #333;
-    padding: 1rem;
+.background-overlay img {
+    position: absolute;
+    top: 12vh;
+    margin-left: 0.5rem;
+    width: 98.8%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
     border-radius: 12px;
 }
 
-.imp-update-content h4{
-    font-size: 2rem;
-    text-align: center;
+/* Bewerbungen Container Design  */
+/* ============================ */
+.bewerbungen-container {
+    display: flex;
+    flex-direction: column;
+    background: #222;
+    margin: 4vh 1vw 1vw;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.88);
+    padding: 1rem;
+    margin-bottom: 4rem;
 }
 
-.imp-update-content p{
-    font-size: 1.6rem;
+h1 { 
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    gap: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.bewerbungen-content p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #fff;
+}
+
+.bewerbungen-content li {
+    font-size: 1.5rem;
+}
+
+.bewerbung-dev{
+    color: rgb(194, 31, 194);
+}
+
+.bewerbung-builder{
+    color: orange;
 }
 
 /* Footer Design  */
@@ -191,18 +154,18 @@ html:root{
     border-radius: 12px;
 }
 
-footer ul{
+footer ul {
     list-style-type: none;
     display: flex;
     gap:20rem;
 }
 
-footer li{
+footer li {
     list-style: none;
     text-decoration: none;
 }
 
-footer a{
+footer a {
     color: #958989b0;
     font-size: 26px;
     text-decoration: none;
@@ -212,7 +175,7 @@ footer a{
 
 /* Footer Link Hover Design  */
 /* =============================== */
-footer a::after{
+footer a::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -224,11 +187,11 @@ footer a::after{
     border-radius: 8px;
 }
 
-footer a:hover:after{
+footer a:hover:after {
     width: 100%;
 }
 
-footer a:hover{
+footer a:hover {
     transition: color 0.4s ease-in-out;
     color: #fff;
     cursor: pointer;

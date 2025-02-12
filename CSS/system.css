@@ -1,5 +1,5 @@
-/* Index CSS Style Sheet  */
-/* ===================== */
+/* System CSS Style Sheet  */
+/* ====================== */
 
 /* Imports  */
 /* ======= */
@@ -33,6 +33,8 @@ html:root{
     background-color: #222;
     border-radius: 12px;
     transition: margin-top 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    min-height: fit-content;
+    min-width: fit-content;
 }
 
 .navbar-content ul{
@@ -78,103 +80,73 @@ html:root{
     cursor: pointer;
 }
 
-/* Server Image Container Design  */
-/* ============================= */
-.server-img-container{
+/* Header Design  */
+/* ============= */
+.header-container{
     display: flex;
     justify-content: center;
-    position: relative;
-    width: auto;
-    height: 280px;
-    margin: 6rem;
-    gap: 4rem;
+    margin-top: 16vh;
+    min-height: fit-content;
+    min-width: fit-content;
 }
 
-/* Server Image Design  */
-/* =================== */
-.server-img-container img{
-    border-radius: 8px;
-    box-shadow: 0 4px 8px 4px #222;
-    position: relative;
-    z-index: 2;
+h2{
+    font-size: 3rem;
 }
 
-.server-img-container::before{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-125%, -50%);
-    width: 380px;
-    height: 380px;
-    background: radial-gradient(circle, rgba(29, 78, 216, 0.5) 10%, rgba(29, 78, 216, 0) 70%);
-    filter: blur(20px);
-    z-index: -1;
-    pointer-events: none;
-}
-
-/* Header Text Design  */
+/* Services Container  */
 /* ================== */
-.server-img-container .header-text h1, h2{
-    margin-top: 2rem;
-    font-weight: 700;
-    opacity: 0;
-    transform: translateX(50px);
-}
-
-.header-text h1{
-    font-size: 3.5rem;
-    color: #fff;
-    animation: fadeInSlide 1s ease-in forwards;
-}
-
-.header-text h2{
-    font-size: 2.5rem;
-    color: #FFD700;
-    animation: fadeInSlide 1s ease-in forwards;
-    animation-delay: 1s;
-}
-
-/* Header Fade-In Animation Keyframes  */
-/* ================================== */
-@keyframes fadeInSlide{
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-/* Important Updates Container Design  */
-/* ================================== */
-.imp-update-container{
-    background-color: #222;
-    width: 60%;
-    height: auto;
-    margin-top: 20vh;
+.services-container{
+    display: flex;
+    justify-content: space-evenly;
     margin-left: auto;
     margin-right: auto;
-    padding: 1rem;
+    margin-top: 4vh;
+    background-color: transparent;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.88);
+    width: 40%;
+    min-height: fit-content;
+    min-width: fit-content;
 }
 
-.imp-update-content{
+/* Services Table Design  */
+/* ===================== */
+.services-content table {
+    width: 100%;
+    border-collapse: separate;
+    text-align: left;
+    color: #fff;
+    border-radius: 12px;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+.services-content th {
     background-color: #333;
+    font-size: 2rem;
     padding: 1rem;
+    border: 1px solid #444;
+    text-align: center;
     border-radius: 12px;
 }
 
-.imp-update-content h4{
-    font-size: 2rem;
-    text-align: center;
+.services-content td {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    border: 1px solid #444;
+    border-radius: 12px;
 }
 
-.imp-update-content p{
-    font-size: 1.6rem;
+.services-content td:nth-child(2),
+.services-content th:nth-child(2) {
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Checker Design  */
+/* ============== */
+.services-content i{
+    color: rgb(22, 194, 22);
 }
 
 /* Footer Design  */
