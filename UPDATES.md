@@ -2,6 +2,18 @@
 
 **This is the active Web-Changelog**
 
+**28.08.2025**
+- **Changed Website Structure**
+- **Changes CSS-Stylsheet Structur**
+- **Removed JS entirely for now**
+- **Simplified UI / UX**
+- **Removed all old Files**
+- **Changed Root Colors in Common.css**
+- **Simplfied Navbar**
+- **Reworked Dynamic Content and Media Queries**
+- **Updated to Current Team Members**
+
+
 **12.02.2025**
 
 - **Uploaded v2.0 first Files onto GitHub**
