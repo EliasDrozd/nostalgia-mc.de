@@ -1,0 +1,65 @@
+/*  ====================================  */
+/*  Team CSS Stylesheet                   */
+/*  Version: 2.2.0                        */
+/*  Author: Elias Drozd                   */
+/*  Copyright © 2025, All rights reserved */
+/*  ====================================  */
+
+/*  Team Cards Design  */
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.team-main {
+    max-width: 1800px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.team-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.team-card {
+    background: #1d2537;
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    max-width: 480px;
+    flex: 1 1 400px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(43, 189, 126, 0.6);
+}
+
+.team-card img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #2bbd7e;
+}
+
+.team-card h2 {
+    margin-bottom: 0.5rem;
+}
+
+.team-card p {
+    opacity: 0.85;
+}
