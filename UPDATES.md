@@ -13,7 +13,6 @@
 - **Reworked Dynamic Content and Media Queries**
 - **Updated to Current Team Members**
 
-
 **12.02.2025**
 
 - **Uploaded v2.0 first Files onto GitHub**
