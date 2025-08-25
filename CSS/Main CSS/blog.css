@@ -1,0 +1,117 @@
+/*  ====================================  */
+/*  Blog CSS Stylesheet                   */
+/*  Version: 2.2.0                        */
+/*  Author: Elias Drozd                   */
+/*  Copyright © 2025, All rights reserved */
+/*  ====================================  */
+
+/*  Blog Teaser Design  */
+.blog-main {
+    min-height: 100vh;
+    max-width: 1080px;
+    margin: 4rem auto;
+    padding: 0 4rem;
+}
+
+.blog-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.blog-header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.blog-posts {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 580px;
+    gap: 2rem;
+}
+
+.blog-card {
+    text-align: center;
+    background: #1d2537;
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.blog-card h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.read-more {
+    display: inline-block;
+    margin: 1rem auto 0;
+    margin-top: 1rem;
+    color: #2bbd7e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    color: #239764;
+}
+
+/* ========================================= */
+/* Media Queries                             */
+/* ========================================= */
+@media (max-width: 1024px) {
+  .blog-main {
+    padding: 0 2rem;
+  }
+
+  .blog-posts {
+    width: 100%;
+  }
+
+  .blog-card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-main {
+    padding: 0 1rem;
+  }
+
+  .blog-header h1 {
+    font-size: 2rem;
+  }
+
+  .blog-posts {
+    gap: 1.5rem;
+  }
+
+  .blog-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .blog-card {
+    padding: 1.25rem;
+  }
+
+  .blog-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .read-more {
+    font-size: 0.95rem;
+  }
+}

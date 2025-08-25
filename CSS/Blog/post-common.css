@@ -1,0 +1,160 @@
+/*  ====================================  */
+/*  Blog-Post Common CSS Stylesheet       */
+/*  Version: 2.2.0                        */
+/*  Author: Elias Drozd                   */
+/*  Copyright © 2025, All rights reserved */
+/*  ====================================  */
+
+/*  Post Design  */
+.post-card {
+    background: #1d2537;  
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 940px;
+    margin: 6rem auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    line-height: 1.6;
+    font-family: var(--font-main);
+}
+
+.post-teaser-divider {
+    border: none;               
+    border-top: 1px solid #2bbd7e;
+    margin: 1rem 0;             
+    width: 85%;                 
+    margin-left: auto;          
+    margin-right: auto;
+    opacity: 0.6;              
+}
+
+.post-card h1, 
+.post-card h2, 
+.post-card h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.post-card p {
+    margin-top: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.post-card a.read-more {
+    color: #2bbd7e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post-card a.read-more:hover {
+    color: #239764;
+}
+
+/*  Table Design  */
+.post-table-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.post-table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    background: #1d2537;
+    color: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.post-table th,
+.post-table td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+}
+
+.post-table th {
+    background: #2bbd7ec9;
+    color: #fff;
+    text-align: center;
+}
+
+.post-table tr {
+    background: rgba(255, 255, 255, 0.075);
+}
+
+.post-table tr:nth-child(even) {
+    background: rgba(5, 3, 3, 0.05);
+}
+
+.post-table td {
+    text-align: center;
+}
+
+/*  Meta Info Design  */
+.post-meta {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    opacity: 0.85;
+}
+
+.post-meta .author {
+    font-weight: bold;
+}
+
+.post-meta .admin {
+    color: #e74c3c;
+}
+
+.post-meta .date {
+    color: #aaa;
+}
+
+/*  Status Icons Design  */
+.status-icon {
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.status-available {
+  color: #2bbd7e;
+}
+
+.status-unavailable {
+  color: #e74c3c;
+}
+
+/*  Image Gallery Design  */
+.post-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.post-gallery img {
+  width: calc(50% - 0.5rem);
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+/* ========================================= */
+/* Media Queries                             */
+/* ========================================= */
+@media (max-width: 768px) {
+  .post-card {
+    padding: 1.5rem 1rem;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .post-gallery img {
+    width: 100%;
+  }
+}
