@@ -1,0 +1,195 @@
+/*  ====================================  */
+/*  Common CSS Stylesheet                 */
+/*  Version: 2.2.0                        */
+/*  Author: Elias Drozd                   */
+/*  Copyright © 2025, All rights reserved */
+/*  ====================================  */
+
+/*  Root Design  */
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    color-scheme: light;
+
+
+    --spacing: 1rem;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*  Browser Margin & Padding Reset  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/*  HTML Design  */
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/*  Body Style  */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: var(--font-main);
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+/*  Navigationbar Design  */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #090e17;
+    color: #fff;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navlogo img {
+    height: 96px;
+    width: auto;
+    border-radius: 12px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.nav-links li a:hover, .navbar-links li a.active {
+    background-color: #2c3854;
+}
+
+/*  Navigationbar Button Design  */
+.join-btn {
+  background-color: #2bbd7e;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background 0.4s ease-in-out;
+}
+
+.join-btn:hover {
+  background: #239764;
+}
+
+/*  Footer Design  */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #0f1624;
+  color: white;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-left img {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+}
+
+.footer-center {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.footer-center a {
+  color: white;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-center a:hover,
+.footer-center a:focus {
+  color: #2bbd7e;
+  outline: none;
+}
+
+/* ========================================= */
+/* Media Queries                             */
+/* ========================================= */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-left {
+    gap: 1rem;
+  }
+
+  .navlogo img {
+    height: 64px; /* kleineres Logo */
+  }
+
+  .nav-links {
+    flex-direction: row; /* horizontal! */
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .nav-links li a {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .join-btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .footer-center {
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 4rem;
+  }
+}
