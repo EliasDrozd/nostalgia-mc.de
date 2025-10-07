@@ -1,0 +1,66 @@
+/* ================ */
+/* Common CSS File  */
+/* ================ */
+
+/* Browser Padding & Margin Reset */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* Root Data */
+:root {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    color-scheme: dark;
+}
+
+/* HTML & Body Design */
+body {
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+/* Navigationbar Design */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link a {
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+}
+
+/* Footer Design */
+.footer-container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    bottom: 0;
+}
+.footer-list {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+.footer-link a {
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+}
